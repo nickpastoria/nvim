@@ -3,3 +3,4 @@
 require("nickpasta.settings")
 require("nickpasta.maps")
 require("nickpasta.lazy")
+require("nickpasta.commands")
