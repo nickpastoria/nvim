@@ -24,7 +24,6 @@ return {
 			snippet = {
 				expand = function(args)
 					luasnip.lsp_expand(args.body)
-					vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
