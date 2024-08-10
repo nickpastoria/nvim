@@ -18,7 +18,7 @@ map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 
 -- Special Functions
-map("n", "<leader>f", "<CMD>:let @+ = expand('%')<CR>")
+map("n", "cp", ":let @+ = expand('%')<cr>")
 
 -- New Windows
 map("n", "<leader>o", "<CMD>vsplit<CR>")
