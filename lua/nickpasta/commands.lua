@@ -1,3 +1,4 @@
+-- lua/nickpasta/commands.lua
 local function command(name, expression, vars)
 	vim.api.nvim_create_user_command(name, expression, { vars })
 end
