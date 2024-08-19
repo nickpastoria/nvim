@@ -1,3 +1,4 @@
+-- lua/nickpasta/maps.lua
 vim.g.mapleader = " "
 
 local function map(mode, lhs, rhs)
@@ -18,7 +19,8 @@ map("n", "<leader>e", "<CMD>Neotree toggle<CR>")
 map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 
 -- Special Functions
-map("n", "cp", ":let @+ = expand('%')<cr>")
+map("n", "cp", ":let @+ = expand('%:p:.')<cr>")
+map("n", "np", ":let @+ = expand('%:t')<cr>")
 
 -- New Windows
 map("n", "<leader>o", "<CMD>vsplit<CR>")
